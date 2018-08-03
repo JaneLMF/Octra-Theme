@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+	<template id="snippet_style_fifteen" inherit_id="octra_business_snippets.octra_business_snippets"
+		name="octra snippet" priority="18">
+		<xpath
+			expr="//div[@id='octra_snippet_structure']/div[hasclass('o_panel_body')]"
+			position="inside">
+			<t t-snippet="website.s_banner" t-thumbnail="/octra_b_snippet_style_18/static/src/img/snippet_9.jpg" />
+		</xpath>
+	</template>
+
+	<template id="website.s_banner" name="Style 18">
+				<div id="myCarousel" class="carousel slide s_banner"
+					data-interval="10000" style="height: 600px;">
+					<div class="carousel-inner">
+						<div class="item oe_img_bg active"
+							style="background-image:url('/octra_b_snippet_style_7/static/src/img/slider_bg_1.jpg')">
+							<div class="container">
+								<div class="row content">
+									<div class="carousel-content col-md-6 mt128 mb96">
+										<ul class="ts7_content_wrap" id="list_ul">
+											<li>
+												<h1 class="ts7_s-lvl_heading">
+													BUILD YOUR <span>DREAM</span>
+												</h1>
+											</li>
+											<li>
+												<div class="common-div ts7_hr">
+													<p class="ts7sep_span_hr" />
+												</div>
+											</li>
+											<li>
+												<p class="ts7_sub_title">Lorem Ipsum is simply dummy text of the 
+												printing and typesetting industry. Lorem Ipsum has been the 
+												industry's standard dummy text ever since the 1500s, when an unknown 
+												printer took a galley of type and scrambled it to make a type 
+												specimen book.</p>
+											</li>
+											<li>
+												<div class="ts7_btn_wrap common-div">
+
+													<a href="#" class="octra_btn">shop now</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item oe_img_bg"
+							style="background-image:url('/octra_b_snippet_style_7/static/src/img/slider_bg_2.jpg')">
+							<div class="container">
+								<div class="row content">
+									<div class="carousel-content col-md-6 mt128 mb96">
+										<ul class="ts7_content_wrap" id="list_ul">
+											<li>
+												<h1 class="ts7_s-lvl_heading">
+													BUILD YOUR <span>DREAM</span>
+												</h1>
+											</li>
+											<li>
+												<div class="common-div ts7_hr">
+													<p class="ts7sep_span_hr" />
+												</div>
+											</li>
+											<li>
+												<p class="ts7_sub_title">Lorem Ipsum is simply dummy text of the 
+												printing and typesetting industry. Lorem Ipsum has been the 
+												industry's standard dummy text ever since the 1500s, when an unknown 
+												printer took a galley of type and scrambled it to make a type 
+												specimen book.</p>
+											</li>
+											<li>
+												<div class="ts7_btn_wrap common-div">
+													<a href="#" class="octra_btn">shop now</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-control left" data-target="#myCarousel"
+						data-slide="prev" style="width: 10%">
+						<i class="fa fa-chevron-left" />
+					</div>
+					<div class="carousel-control right" data-target="#myCarousel"
+						data-slide="next" style="width: 10%">
+						<i class="fa fa-chevron-right" />
+					</div>
+				</div>
+	</template>
+</odoo>

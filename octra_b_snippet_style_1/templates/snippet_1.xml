@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+		<template id="octra_content" inherit_id="octra_business_snippets.octra_business_snippets" name="octra Snippet" priority="1">
+			<xpath expr="//div[@id='octra_snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+				<t t-snippet="octra_b_snippet_style_1.snippet_style_1_template" t-thumbnail="/octra_b_snippet_style_1/static/src/img/snippet_1.jpg"  />
+			</xpath>
+		</template>
+		<template id="snippet_style_1_template" name="Style 1">
+		<div class="oe_structure" />
+			<section class="s1_main_wrap">
+				<div class="s1_main_container">
+					<div class="s1_heading_container"><h3 class="ch_h1_class">Start | Snack | Share</h3></div>
+					<div class="s1_row">
+						<div class="s1_img_content_main top_row_border_rb">
+							<section class="s1_content_info">
+								<h3 class="para_title common-div">Penne with tomatoes</h3>
+								<p class="s1_para_detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+							</section>
+							<div class="s1_img_div">
+								<section><a href="#"><img class="s_image_common img_shape_one" src="/octra_b_snippet_style_1/static/src/img/style_1_img_1.jpg"></img></a></section>
+							</div>
+						</div>
+						<div class="s1_img_content_main top_row_border_rb resp_border">
+							<div class="s1_img_div">
+								<section><a href="#"><img class="s_image_common img_shape_two" src="/octra_b_snippet_style_1/static/src/img/style_1_img_2.jpg"></img></a></section>
+							</div>
+							<section class="s1_content_info">
+								<h3 class="para_title common-div">Smoked TROUT DIP</h3>
+								<p class="s1_para_detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+							</section>
+							
+						</div>
+						<div class="s1_img_content_main row_one_border_b">
+							<section class="s1_content_info">
+								<h3 class="para_title common-div">HOT and SWEET WINGS</h3>
+								<p class="s1_para_detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+							</section>
+							<div class="s1_img_div">
+								<section><a href="#"><img class="s_image_common img_shape_one" src="/octra_b_snippet_style_1/static/src/img/style_1_img_3.jpg"></img></a></section>
+							</div>
+						</div>
+					</div>
+					<div class="s1_row">
+						<div class="s1_img_content_main row_two_border_r resp_border">
+							<section class="s1_content_info">
+								<h3 class="para_title common-div">Carpaccio nuovo</h3>
+								<p class="s1_para_detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+							</section>
+							<div class="s1_img_div">
+								<section><a href="#"><img class="s_image_common img_shape_one" src="/octra_b_snippet_style_1/static/src/img/style_1_img_4.jpg"></img></a></section>
+							</div>
+						</div>
+						<div class="s1_img_content_main row_two_border_r">
+							<div class="s1_img_div">
+								<section><a href="#"><img class="s_image_common img_shape_two" src="/octra_b_snippet_style_1/static/src/img/style_1_img_5.jpg"></img></a></section>
+							</div>
+							<section class="s1_content_info">
+								<h3 class="para_title common-div">Summer salad</h3>
+								<p class="s1_para_detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+							</section>
+							
+						</div>
+						<div class="s1_img_content_main resp_border">
+							<section class="s1_content_info">
+								<h3 class="para_title common-div">TRUFFLED  FRIES</h3>
+								<p class="s1_para_detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+							</section>
+							<div class="s1_img_div">
+								<section><a href="#"><img class="s_image_common img_shape_one" src="/octra_b_snippet_style_1/static/src/img/style_1_img_6.jpg"></img></a></section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</template>
+</odoo>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+        <!--Website portfolio category -->
+        <record id="portfolio_category_form_view" model="ir.ui.view">
+            <field name="name">portfolio.category.form.view</field>
+            <field name="model">portfolio.category</field>
+            <field name="arch" type="xml">
+                <form>
+                   <sheet>
+                   	<group>
+	                    <field name="name"/>
+                   	</group>
+                   </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_portfolio_category" model="ir.actions.act_window">
+            <field name="name">Website Portfolio Category</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">portfolio.category</field>
+            <field name="view_type">form</field>
+        </record>
+
+        <menuitem id="portfolio_category_menu" name="Website Portfolio Category" parent="octra_gallery.menu_website_portfolio_root" sequence="20" action="action_portfolio_category"/>
+</data>
+</odoo>

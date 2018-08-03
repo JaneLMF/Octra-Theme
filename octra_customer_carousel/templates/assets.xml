@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="assets_frontend_js"
+		name="Customer carousel snippets JS frontend assets"
+		inherit_id="website.assets_frontend">
+		<xpath expr="//script[last()]" position="after">
+			<script type="text/javascript"
+				src="/octra_customer_carousel/static/src/js/customer_carousel_snippet_frontend.js"></script>
+			<script type="text/javascript"
+				src="/octra_customer_carousel/static/src/js/customer_carousel_snippet_backendend.js"></script>
+			 <script type="text/javascript"
+				src="/octra_customer_carousel/static/src/js/slider_custom.js"></script> 
+			<link href="/octra_customer_carousel/static/src/less/customer.less" type="text/less"
+				rel="stylesheet" />
+		</xpath>
+	</template>
+</odoo>

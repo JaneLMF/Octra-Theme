@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+		<template id="octra_style_3" inherit_id="octra_business_snippets.octra_business_snippets" name="octra Snippet" priority="3">
+			<xpath expr="//div[@id='octra_snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+				<t t-snippet="octra_b_snippet_style_3.octra_b_snippet_style_3_template" t-thumbnail="/octra_b_snippet_style_3/static/src/img/snippet_3.jpg"  />
+			</xpath>
+		</template>
+		<template id="octra_b_snippet_style_3_template" name="Style 3">
+		<div class="oe_structure" />
+		<section class="img_banner_snippet">
+				<div class="img_banner_snippet_img_div">
+					<a href="#"><section><img class="s_image_common" src="/octra_b_snippet_style_3/static/src/img/style_3_img_1.jpg"></img></section></a>
+				</div>
+			</section>
+		</template>
+</odoo>

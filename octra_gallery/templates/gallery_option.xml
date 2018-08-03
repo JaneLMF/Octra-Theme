@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	<data>
+		<template id="gallery_snippets_option" inherit_id="website.snippet_options">
+			<xpath expr="//div[@data-js='background']" position="after">
+				<div data-js='js_get_gallery' data-selector=".js_get_gallery" />
+			</xpath>
+		</template>
+	</data>
+</odoo>

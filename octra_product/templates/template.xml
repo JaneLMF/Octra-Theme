@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="octra_product_product" inherit_id="website_sale.product">
+	 	<xpath expr="//section[@id='product_detail']/div[hasclass('row')]/div[hasclass('col-sm-3')]" position="replace">
+		 
+		</xpath>
+		
+		<!-- Bread_crumb -->
+		<xpath expr="//section[@id='product_detail']//div[@class='row']//div[hasclass('col-sm-4')]" position="attributes">
+			<attribute name="class">col-md-7</attribute>
+		</xpath>
+		<xpath expr="//section[@id='product_detail']//div[@class='row'][2]//div[hasclass('col-sm-7')]" position="attributes">
+			<attribute name="class">col-sm-7 product_image_div</attribute>
+		</xpath>
+		<xpath expr="//div[hasclass('o_not_editable')]" position="replace">
+		 
+		</xpath>
+		<xpath expr="//hr[@t-if='product.description_sale']" position="replace">
+		 
+		</xpath>
+		<xpath expr="//h1" position="after">
+		  <div class="o_not_editable">
+             <p t-field="product.description_sale" class="text-muted octra_class_desc" />
+          </div>
+		</xpath>
+		<xpath expr="//h1" position="after">
+		 <p class="border_class_h1"></p>
+		</xpath>
+			<xpath expr="//div[hasclass('js_product')]" position="attributes">
+		 <attribute name="class">js_product js_product_octra</attribute>
+		</xpath>
+		<xpath expr="//div[hasclass('col-sm-2')]" position="replace">
+		
+		</xpath>
+	</template>
+	<template id="octra_product_variants" inherit_id="website_sale.product_variants">
+	<xpath expr="//span[@class='badge']" position="attributes">
+		<attribute name="class">badge octra_badge</attribute>
+	</xpath>
+	</template>
+	<template id="octra_recommended_products" inherit_id="website_sale.recommended_products" name="">
+	<xpath expr="//div[@t-if='product.alternative_product_ids']" position="replace">
+		<div class="container mt32" t-if="product.alternative_product_ids">
+                <h3 class="octra_name">Alternative Products:</h3>
+               <div class="row mt16">
+				   
+                    <t t-foreach="product.alternative_product_ids" t-as="alt_product">
+                        <div class="col-md-2 octra_alternate">
+                            <div class="mt16 octra_product_class_alt">
+								<a t-attf-href="/shop/product/#{ slug(alt_product) }">
+                                <div t-field="alt_product.image" t-options="{'widget': 'image', 'resize': None if product_image_big else '300x300', 'class': 'o_alternative_product' }" />
+                                </a>
+                                <h5>
+                                    <a t-attf-href="/shop/product/#{ slug(alt_product) }" class="octra_alt_name">
+                                        <span t-att-title="alt_product.name" t-field="alt_product.name" style="display: block;" />
+                                    </a>
+                                </h5>
+                            </div>
+                        </div>
+                    </t>
+                   
+                </div>
+            </div>
+	
+	</xpath>
+	</template>
+	
+</odoo>

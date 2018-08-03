@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="base_assets_frontend" inherit_id="web.assets_frontend" name="Style">
+		<xpath expr="." position="inside">
+			<link href="/octra_base/static/src/less/mixin.less" type="text/less"
+				rel="stylesheet" />
+				
+				<link href="/octra_base/static/src/less/owl.carousel.min.css" type="text/less"
+				rel="stylesheet" />
+				<link href="/octra_base/static/src/less/owl.theme.default.min.css" type="text/less"
+				rel="stylesheet" />
+				<script type="text/javascript"
+				src="/octra_base/static/src/js/owl.carousel.js"></script>
+		</xpath>
+	</template>
+</odoo>

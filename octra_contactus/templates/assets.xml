@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="contact_assets_frontend" inherit_id="web.assets_frontend">
+		<xpath expr="." position="inside">
+			<link href="/octra_contactus/static/src/less/contactus.less" type="text/less"
+				rel="stylesheet" />
+		</xpath>
+	</template>
+</odoo>

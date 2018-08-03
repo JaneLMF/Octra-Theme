@@ -1,0 +1,124 @@
+.signin_main_div{
+	max-width: 1400px;
+	display: block;
+	margin: 0px auto;
+	width:90%;
+	.mt(3%);
+	.mb(3%);
+	position:relative;
+}
+.form-control.c-login-input
+{
+	border: 0;
+	border-bottom: 1px solid #CCC;
+	border-radius: 0;
+	padding: 7px 0;
+	box-shadow: unset;
+	background: transparent;
+	position:relative;
+	display:inline-block;
+}
+.focus-border{position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: @theme-color; transition: 0.4s;}
+.c-login-input:focus ~ .focus-border{width: 100%; transition: 0.4s;}
+
+
+.login_btn_main,.db_btn
+{
+	.bg(@theme-color);
+	
+	&:hover
+	{
+		.bg(@theme-color);
+	}
+}
+.login_area_container,.signup_form_container
+{
+	max-width:350px !important;
+	display:block;
+	float:none;
+	padding: 18px;
+    box-shadow: 1px 1px 9px 0px #ccc;
+    background-color: white;
+    
+    .field-login,.field-db
+    {
+    	position:relative;
+    	.mb(10%);
+    }
+    .field-password
+    {
+    	.mb(10%);
+    	position:relative;
+    }
+    .form-group
+    {
+    	.mb(10%);
+    	position:relative;
+    }
+}
+.oe_reset_password_form
+{
+	.field-login
+	{
+		position:relative;
+		.mb(10%);
+	}
+	
+}
+.db_input
+{
+	border: none;
+	border-radius: 0;
+	box-shadow: unset;
+	background: transparent;
+}
+.c_login_lbl
+{
+	.size(12px);
+	.uppercase();
+}
+
+.back_home_icon_div{
+	position: absolute;
+    left: 30%;
+    top: 30px;
+    .size(30px);
+    color: white;
+    width: 60px;
+    .pt(5px);
+    .pb(5px);
+    
+    & a{
+		color:@theme-color;
+    }
+}
+
+.oe_login_buttons 
+{
+	.mt(32px);
+
+	.login_btn_style,.signup_btn_style
+	{
+		.uppercase();
+		.muli-semibold();
+		.size(13px);
+		letter-spacing:1px;
+		width:100%;
+		padding:10px 0;
+	}
+	
+	a.btn-link 
+	{
+		color:#666;
+		.size(13px);
+		.mb(15px);
+		text-align:right;
+		.muli-regular();
+		letter-spacing:1px;
+		background: unset;
+		text-transform: none;
+		opacity: 1 !important;
+		padding: 0;
+		
+	}	
+}

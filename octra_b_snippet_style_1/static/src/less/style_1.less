@@ -1,0 +1,153 @@
+.s1_main_wrap
+{
+	.common-div;
+}
+.s1_main_container
+{
+	.block;
+}
+.s1_heading_container,s1_row
+{
+	.common-div;
+	text-align:center;
+}
+.s1_img_content_main
+{
+	width:33.33%;
+	display:block;
+	float:left;
+	padding:4%;
+	min-height:420px;
+}
+.s1_heading_container
+{
+	.mb(2%);
+}
+.sep_span_hr
+{
+	width:75px;
+	border-top:2px solid @theme-color;
+	margin:0px auto;
+}
+.top_row_border_rb
+{
+	border-right:1px solid #DFE5E8;
+	border-bottom:1px solid #DFE5E8;
+}
+.row_one_border_b
+{
+	border-bottom:1px solid #DFE5E8;
+}
+.row_two_border_r
+{
+	border-right:1px solid #DFE5E8;
+}
+.s1_content_info
+{
+	max-width: 80%;  
+	display: block;  
+  margin: 0px auto;
+}
+.s1_img_div
+{
+	width:100%;
+}
+.para_title
+{
+	color:#000;
+	.muli-semibold();
+	.uppercase();
+	.size(19px);
+	text-align:center;
+	.mb(16px);
+}
+.s1_para_detail
+{
+	color: #525252;
+	text-align:center;
+	line-height:176%;
+	.mb(10%);
+	.size(14px);
+	.muli-light();
+}
+.img_shape_one
+{
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	max-height:195px;
+}
+.img_shape_two
+{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    max-height:195px;
+}
+
+
+
+@media (max-width: 1200px) {
+
+	.s1_img_content_main
+	{
+		padding: 3%;
+		min-height: 400px;
+	}
+	.s1_content_info
+	{
+		max-width:100%;
+	}
+}
+@media (max-width: 1000px) {
+	
+	.top_row_border_rb,.row_two_border_r
+	{
+		border:none;
+	}
+	.s1_img_content_main
+	{
+		width:50%;
+		border-bottom:1px solid #DFE5E8;
+	}
+	.resp_border
+	{
+		border-left:1px solid #DFE5E8;
+	}
+}
+@media (max-width: 800px) {
+
+	.s1_img_content_main{
+	padding: 4%;
+	min-height:410px;
+	}
+	.para_title
+	{
+		.size(17px);
+	}
+}
+@media (max-width: 600px) {
+
+	.s1_img_content_main
+	{
+		width:90%;
+		margin:0px auto;
+		float:none;
+	}
+	.resp_border
+	{
+		border-left:unset;
+	}
+	.s1_para_detail
+	{
+		.mb(5%);
+	}
+}
+
+@media (max-width: 400px) {
+	
+	.s1_img_content_main{
+		min-height:390px;
+	}
+	
+}

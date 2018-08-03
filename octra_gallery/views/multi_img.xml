@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+        <record id="galleryimage_form_view" model="ir.ui.view">
+            <field name="name">portfolio.form.view</field>
+            <field name="model">multi.img</field>
+            <field name="arch" type="xml">
+                <form>
+                   <sheet>
+                   	<group>
+	                    <field name="name"/>
+	                    <field name="image_id" widget="image" class="oe_avatar"/>
+                   	</group>
+                   </sheet>
+                </form>
+            </field>
+        </record>
+</data>
+</odoo>

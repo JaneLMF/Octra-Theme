@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="octra_product_wishlist" inherit_id="website_sale_wishlist.product_wishlist">
+		<xpath expr="//td[hasclass('td-img')]" position="attributes">
+			<attribute name="class">td-img octra_td-img</attribute>
+		</xpath>
+		<xpath expr="//td[hasclass('text-left')]" position="attributes">
+			<attribute name="class">text-left octra_td-content</attribute>
+		</xpath>
+		<xpath expr="//td[hasclass('td-wish-btn')]" position="attributes">
+			<attribute name="class">td-wish-btn text-center octra_td-btn</attribute>
+		</xpath>
+		<xpath expr="//td[3]" position="attributes">
+			<attribute name="class">octra_td-price</attribute>
+		</xpath>
+		<xpath expr="//br" position="replace"></xpath>
+		<xpath expr="//h3" position="attributes">
+			<attribute name="class">octra_name</attribute>
+		</xpath>
+		<xpath expr="//div[hasclass('checkbox')]" position="attributes">
+			<attribute name="class">checkbox octra_checkbox</attribute>
+		</xpath>
+		
+		<!-- Change_wishlist_add_to_cart_btn_text -->
+		<xpath expr="//a[hasclass('o_wish_add')]//span[hasclass('hidden-xs')]" position="attributes">
+			<attribute name="class">hidden-sm hidden-xs</attribute>
+		</xpath>
+	</template>
+	
+	<template id="octra_wishlist_header" inherit_id="website_sale_wishlist.header" priority="18">
+		<xpath expr="//li[@id='my_wish']" position="replace"></xpath>
+	</template>
+	<template id="octra_wishlist_octra_header" inherit_id="octra_layout.octra_layout" priority="20">
+		<xpath expr="//ul[@id='header_right_icons']" position="inside">
+			<t t-if="request.env.ref('website_sale_wishlist.add_to_wishlist').active">
+                <t t-set='wishcount' t-value="len(request.env['product.wishlist'].current())"/>
+                <li id="my_wish" t-att-style="not wishcount and 'display:inline-block;'">
+                    <a href="/shop/wishlist">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+						<sup t-attf-class="my_wish_quantity o_animate_blink"><t t-esc='wishcount'/></sup>
+                    </a>
+                </li>
+            </t>
+		</xpath>
+	</template> 
+
+</odoo>

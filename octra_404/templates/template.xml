@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	<template id="octra_404" inherit_id="website.404">
+		<xpath expr="//div[hasclass('container')]" position="replace">
+					<div class="container">
+						<div class="octra_404_left">
+							<h1 class="mt32 octra_404_font">404</h1>
+							<p class="octra_404_page">THIS PAGE YOU REQUESTED COULD NOT BE FOUND</p>
+							<ul class="octra_404_ul">
+								<li class="octra_404_li">
+									<a class="octra_btn" href="/">Homepage</a>
+									<a class="octra_btn" href="/page/website.contactus/">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+						<div class="octra_404_right">
+							<img src="/octra_404/static/src/img/404.jpg"></img>
+						</div>
+					</div>
+			
+				<t t-if="request.debug">
+					<t t-call="website.http_error_debug" />
+				</t>
+			
+		</xpath>
+	</template>
+</odoo>

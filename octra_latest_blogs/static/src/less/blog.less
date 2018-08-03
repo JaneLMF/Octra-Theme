@@ -1,0 +1,126 @@
+.blog_carousel
+{
+	.common-div;
+}
+#latest_post_img_div_style_1
+{
+	width:30.7%;
+	display:inline-block;
+	vertical-align: top;
+	margin: 0 1%;
+	border: 1px solid #e7e4e4;
+	
+	.image_blog_homepage
+	{
+		padding:30%;
+		background-position: center;
+	}
+
+	.l_Blog_detail
+	{
+		padding:5%;
+		position:relative;
+	}
+	.octra_product_name
+	{
+		color:#444;
+		.muli-semibold();
+		.size(16px);
+	}
+	.writer_date
+	{
+		.size(12px);
+		.mt(5%);
+		
+		span
+		{
+			padding:0 5px;
+		}
+	}
+	.lb_subtitle
+	{
+		line-height: 170%;
+	}
+	#l_blog_readmore
+	{
+		.muli-semibold();
+		color:@theme-color;
+	}
+	.lb_catg {
+    display: inline-block;
+    padding: 5px 15px;
+    color: #fff;
+    background: @theme-color;
+    border-radius: 4px;
+    position: absolute;
+    top: -15px;
+    .size(13px);
+    .uppercase();
+	}
+	.l-blog-name {
+   		.mt(5%);
+	}
+}
+#latest_post_img_div_style_2
+{
+
+	width:100%;
+	display:inline-block;
+	vertical-align:top;
+	padding: 2%;
+	
+	.latest_blog_2_sub_main
+	{
+		border:1px solid #eee;
+	
+		.image_blog_homepage
+		{
+			padding:30% 50%;
+				background-position: center;
+
+		}
+		.l_Blog_detail {
+			padding: 3%;
+			position:relative;
+		}
+		.octra_product_name
+		{	
+		color:#444;
+		.muli-semibold();
+		.size(16px);
+		}
+		.l-blog-date {
+			display: inline-block;
+			color: #fff;
+			background: @theme-color;
+			padding: 5px 15px;
+			border-radius: 4px;
+			position: absolute;
+			top: -20px;
+		}
+		.lb_subtitle
+		{
+			.mb(3%);
+		}
+		.readmore_arrow
+		{
+			.common-div;
+		
+			#l_blog_readmore
+			{
+				.muli-semibold();
+				color:@theme-color;
+				.size(14px);
+				float: right;
+				margin: 0;
+			}
+		}
+	}
+}
+@media (max-width: 800px) 
+{
+	#latest_post_img_div_style_1{
+		width: 100% !important;
+		.mb(2%) !important;
+	}
+}

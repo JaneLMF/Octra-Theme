@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="octra_style_5" inherit_id="octra_business_snippets.octra_business_snippets"
+		name="octra Snippet" priority="5">
+		<xpath
+			expr="//div[@id='octra_snippet_structure']/div[hasclass('o_panel_body')]"
+			position="inside">
+			<t t-snippet="octra_b_snippet_style_5.octra_b_snippet_style_5_template" t-thumbnail="/octra_b_snippet_style_5/static/src/img/snippet_5.jpg"  />
+		</xpath>
+	</template>
+	<template id="octra_b_snippet_style_5_template" name="Style 5">
+	<div class="oe_structure" />
+		<section class="ts5_main_wrap">
+			<section class="filled_section">
+				<div class="ts5_top_content">
+					<h3 class="ts5_top_title">Popular drinks</h3>
+					<!-- <p class="ts5_sep_span_hr" /> -->
+					<p class="ts5_top_para">faucibus in ornare quam viverra orci sagittis eu
+						volutpat odio facilisis mauris sit amet massa vitae tortor
+						condimentum lacinia quis.</p>
+				</div>
+			</section>
+			<section class="ts5_img_grid_section">
+				<div class="ts5_left_s_box"></div>
+				<div class="ts5_center_img_grid">
+					<div class="ts5_img_left_main_div">
+						<div class="ts5_img_l_one">
+							<div class="img_cont_div">
+								<section>
+									<a href="#">
+										<img class="s_image_common"
+											src="/octra_b_snippet_style_5/static/src/img/style_5_img_1.jpg"></img>
+									</a>
+								</section>
+							</div>
+							<a class="ts9_center_content_title" href="#">Orange juice</a>
+						</div>
+						<div class="ts5_img_l_two">
+							<div class="img_cont_div">
+								<section>
+									<a href="#">
+										<img class="s_image_common"
+											src="/octra_b_snippet_style_5/static/src/img/style_5_img_2.jpg"></img>
+									</a>
+								</section>
+							</div>
+							<a class="ts9_center_content_title" href="#">Fruit overflow</a>
+						</div>
+					</div>
+					<div class="ts5_img_right_main_div">
+						<div class="ts5_img_r_one">
+							<div class="img_cont_div">
+								<section>
+									<a href="#">
+									
+											<img class="s_image_common"
+											src="/octra_b_snippet_style_5/static/src/img/style_5_img_3.jpg"></img>
+									</a>
+								</section>
+							</div>
+							<a class="ts9_center_content_title" href="#">mocktails</a>
+						</div>
+						<div class="ts5_img_r_two">
+							<div class="img_cont_div">
+								<section>
+									<a href="#">
+										
+												<img class="s_image_common"
+											src="/octra_b_snippet_style_5/static/src/img/style_5_img_4.jpg"></img>
+									</a>
+								</section>
+							</div>
+							<a class="ts9_center_content_title" href="#">Red wine</a>
+						</div>
+					</div>
+						<div class="ts5_img_right_div">
+						<div class="ts5_img_l_one">
+							<div class="img_cont_div">
+								<section>
+									<a href="#">
+										<img class="s_image_common"
+											src="/octra_b_snippet_style_5/static/src/img/style_5_img_5.jpg"></img>
+									</a>
+								</section>
+							</div>
+							<a class="ts9_center_content_title" href="#">Orange juice</a>
+						</div>
+						<div class="ts5_img_l_two">
+							<div class="img_cont_div">
+								<section>
+									<a href="#">
+											<img class="s_image_common"
+											src="/octra_b_snippet_style_5/static/src/img/style_5_img_6.jpg"></img>
+									</a>
+								</section>
+							</div>
+							<a class="ts9_center_content_title" href="#">Fruit overflow</a>
+						</div>
+					</div>
+					<div class="ts5_button_div common-div">
+						<a href="#" class="octra_btn">
+							
+									All Menu
+								
+						</a>
+					</div>
+					
+				</div>
+				<div class="ts5_right_s_box"></div>
+			</section>
+		</section>
+	</template>
+</odoo>

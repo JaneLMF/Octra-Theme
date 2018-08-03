@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	<template id="octra_403" inherit_id="website.403">
+		<xpath expr="//div[hasclass('container')]" position="replace">
+					<div class="container">
+						<div class="octra_403_left">
+							<h1 class="mt32 octra_403_font">403: Forbidden</h1>
+							<p class="octra_403_page">The page you were looking for could not be authorized.</p>
+							<ul class="octra_403_ul">
+								<li class="octra_403_li">
+									<a class="octra_btn" href="/">Homepage</a>
+									<a class="octra_btn" href="/page/website.contactus/">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+						<div class="octra_403_right">
+							<img src="/octra_404/static/src/img/404.png"></img>
+						</div>
+					</div>
+			
+				<t t-if="request.debug">
+					<t t-call="website.http_error_debug" />
+				</t>
+			
+		</xpath>
+	</template>
+</odoo>

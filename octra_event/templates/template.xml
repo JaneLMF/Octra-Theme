@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="octra_event_event_left_column" inherit_id="website_event.event_left_column">
+		<xpath expr="//div[@id='left_column']/ul/t/li" position="attributes">
+			<attribute name="class">event_left_menu_li</attribute>
+		</xpath>
+		<xpath expr="//div[@id='left_column']/ul/t/li/a" position="attributes">
+			<attribute name="class">event_left_menu_a</attribute>
+		</xpath>
+		<xpath expr="//div[@id='left_column']" position="attributes">
+			<attribute name="class">col-md-3 css_noprint event_left_main</attribute>
+		</xpath>
+	</template>
+	
+	<template id="octra_event_event_category" inherit_id="website_event.event_category">
+		<xpath expr="//ul[2]" position="attributes">
+			<attribute name="class">nav nav-pills nav-stacked mt32 event_catg_ul</attribute>
+		</xpath>
+		<xpath expr="//ul[hasclass('event_catg_ul')]/t/li" position="attributes">
+			<attribute name="class">event_left_menu_li</attribute>
+		</xpath>	
+		<xpath expr="//ul[hasclass('event_catg_ul')]/t/li/a" position="attributes">
+			<attribute name="class">event_left_menu_a</attribute>
+		</xpath>
+	</template>
+	<template id="octra_event_event_location" inherit_id="website_event.event_location">
+		<xpath expr="//ul[3]" position="attributes">
+			<attribute name="class">nav nav-pills nav-stacked mt32 event_catg_ul3</attribute>
+		</xpath>
+		<xpath expr="//ul[hasclass('event_catg_ul3')]/t/li" position="attributes">
+			<attribute name="class">event_left_menu_li</attribute>
+		</xpath>	
+		<xpath expr="//ul[hasclass('event_catg_ul3')]/t/li/a" position="attributes">
+			<attribute name="class">event_left_menu_a</attribute>
+		</xpath>
+		<xpath expr="//li[2]/a" position="attributes">
+			<attribute name="class">event_left_menu_a</attribute>
+		</xpath>
+	</template>
+	<template id="octra_event_index" inherit_id="website_event.index">
+		<xpath expr="//div[@id='wrap']/div[hasclass('container')]" position="attributes">
+			<attribute name="class">block</attribute>
+		</xpath>
+		<xpath expr="//ul[hasclass('media-list')]" position="attributes">
+			<attribute name="class">media-list event_desc_ul</attribute>
+		</xpath>
+		<xpath expr="//ul[hasclass('event_desc_ul')]/li" position="attributes">
+			<attribute name="class">media event_desc_li</attribute>
+		</xpath>
+		<xpath expr="//ul[hasclass('event_desc_ul')]/li/div/h4[hasclass('media-heading')]" position="attributes">
+			<attribute name="class">media-heading event_desc_heading</attribute>
+		</xpath>
+		<xpath expr="//li[hasclass('event_desc_li')]/div/div[1]" position="attributes">
+			<attribute name="class">organize_div</attribute>
+		</xpath>
+		<xpath expr="//li[hasclass('event_desc_li')]/div/div[2]" position="attributes">
+			<attribute name="class">event_time_div</attribute>
+		</xpath>
+		<xpath expr="//div[@t-field='event.address_id']" position="attributes">
+			<attribute name="class">event_address</attribute>
+		</xpath>
+		<xpath expr="//div[@t-if='event.event_type_id']" position="attributes">
+			<attribute name="class">event_type</attribute>
+		</xpath>
+		<xpath expr="//div[@id='wrap']/div[hasclass('block')]/div[hasclass('row')]/div[hasclass('row')]" position="replace">
+		</xpath>
+		<xpath expr="//div[@id='middle_column']" position="inside">
+			<div class="col-sm-6 col-xs-offset-3">
+                        <t t-call="website.pager"/>
+             </div>
+		</xpath>
+	</template>
+	
+	<template id="octra_event_registration_template" inherit_id="website_event.registration_template">
+		<xpath expr="//form[@id='registration_form']" position="attributes">
+			<attribute name="class">panel panel-default event_reg_form</attribute>
+		</xpath>
+		<xpath expr="//div[hasclass('panel-heading')]" position="attributes">
+			<attribute name="class">panel-heading hidden-xs hidden-sm event_reg_heading_panel</attribute>
+		</xpath>
+		<xpath expr="//div[hasclass('panel-footer')]/div/div/button" position="replace">
+			<button type="submit" href="#" class="btn-block a-submit octra_btn" t-attf-id="#{event.id}">
+							
+							
+									Register Now
+								
+						</button>
+		</xpath>
+	</template>
+	<template id="octra_event_event_details" inherit_id="website_event.event_details">
+		<xpath expr="//div[hasclass('container')]" position="attributes">
+			<attribute name="class">block</attribute>
+		</xpath>
+		<xpath expr="//h1[@t-field='event.name']" position="attributes">
+			<attribute name="class">event_h1_style</attribute>
+		</xpath>
+		<xpath expr="//div[hasclass('text-center')]" position="attributes">
+			<attribute name="class">participating_lbl</attribute>
+		</xpath>
+		<xpath expr="//h4[hasclass('text-muted')]" position="attributes">
+			<attribute name="class">text-muted event_time_text</attribute>
+		</xpath>
+		<xpath expr="//h4[@t-field='event.address_id']" position="attributes">
+			<attribute name="class">text-muted event_location_text</attribute>
+		</xpath>
+	</template>
+	<template id="octra_event_event_description_full" inherit_id="website_event.event_description_full">
+		<xpath expr="//div[hasclass('css_noprint')]" position="attributes">
+			<attribute name="class">col-md-4 css_noprint event_description_right_main</attribute>
+		</xpath>
+		<xpath expr="//div[@t-if='event.twitter_hashtag']" position="attributes">
+			<attribute name="class">mt16 social_strong_text</attribute>
+		</xpath>
+	</template>
+	<template id="octra_event_layout" inherit_id="website_event.layout">
+		<xpath expr="//div[@id='wrap']/div[hasclass('container')]" position="attributes">
+			<attribute name="class">block</attribute>
+		</xpath>
+	</template>
+	<template id="octra_event_registration_attendee_details" inherit_id="website_event.registration_attendee_details">
+		<xpath expr="//div[hasclass('modal-body')]/div[1]" position="attributes">
+			<attribute name="class">common-div</attribute>
+		</xpath>
+	</template>
+	
+</odoo>	

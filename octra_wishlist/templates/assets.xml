@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="octra_wishlist_assets_frontend" inherit_id="web.assets_frontend">
+		<xpath expr="." position="inside">
+			<link rel="stylesheet" type="text/less"
+				href="/octra_wishlist/static/src/less/wishlist.less" />
+			<link rel="stylesheet" type="text/less"
+				href="/octra_wishlist/static/src/less/wishlist_responsive.less" />
+		</xpath>
+	</template>
+</odoo>

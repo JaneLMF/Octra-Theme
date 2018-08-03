@@ -1,0 +1,304 @@
+.oe_octra_product .oe_product_image
+{
+	position: relative;
+	left: unset;
+	right: unset;
+	top: unset;
+	bottom: unset;
+	text-align: center;
+	& a{
+		display:block;
+	}
+}
+.oe_octra_product section
+{
+	position: relative;
+	overflow: unset;
+	.block;
+	padding: 0px;
+	min-height: unset;
+	.mb(10px);
+	
+	h5
+	{
+		.size(15px);
+		.mb(1px);
+		.common-div;
+	}
+}
+.shop_pager_main
+{
+	float:right;
+	padding: 10px 0;
+		
+	.dropdown_sorty_by
+	{
+		.right();
+		margin: 20px 0;
+		& .dropdown-menu{
+			left: -140%;
+			z-index: 10000;
+		}
+	}
+}
+#products_grid_before
+{
+	.mt(6%);
+}
+ul.pagination
+{
+		li>a
+		{
+			border-radius:unset !important;
+		}
+		.active > a, .active > span, .active > a:hover,.active > span:hover, .active > a:focus, .active > span:focus
+		{
+			background-color: @theme-color;
+			border-color: @theme-color;
+		}
+
+}
+.pagination > li > a, .pagination > li > span {
+
+	color:@theme-color;
+}
+.oe_octra_product .oe_product_image img
+{
+	position: relative;
+	top: unset;
+	left: unset;
+	bottom: unset;
+	right: unset;
+}
+.oe_octra_product
+{
+    position: relative;
+    width: 31%;
+    display: inline-block;
+    vertical-align: top;
+	margin:1%;
+}
+.octra_product_name
+{
+	color: #3f3f3f;
+	.ellipsis();
+}
+.container
+{
+	.block;
+}
+#products_grid .oe_product.oe_grid .oe_subdescription
+{
+	max-height: unset;
+	margin: 0;
+	display:none;
+}
+.oe_product .product_price
+{
+	padding: 5px 0;
+	position: relative;
+	bottom: unset;
+	display: inline-block;
+}
+.oe_octra_product
+{
+	del
+	{
+		text-decoration: line-through;
+		white-space: nowrap;
+		.size(13px);
+		color: #777;
+		float: left;
+		.mr(8px);
+		
+		span
+		{
+			color: #777;
+		}
+	}
+}
+.product_price
+{
+	>b
+	{
+		display:inline-block;
+		width:100%;
+		font-weight: normal;
+	}
+	.btn
+	{
+		.mt(10px);
+		.size(13px);
+	}
+}
+.oe_currency_value
+{
+	.muli-semibold();
+	color: #5c5b5b;
+}
+.btn-default.disabled,.btn-default[disabled],.btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover
+{
+	.bg(@theme-color);
+}
+#o_shop_collapse_category li a
+{
+	.mb(10px);
+	color: #4d4d4d;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus
+{
+	.bg(transparent);
+	color:@theme-color !important;
+	.muli-semibold();
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+   .bg(transparent);
+}
+.nav-stacked > li + li
+{
+	.mt(0);
+}
+#o_shop_collapse_category li a
+{
+	.ellipsis();
+}
+#o_shop_collapse_category li i
+{
+	.right();
+	color: @theme-color;
+	.size(12px);
+	vertical-align: middle;
+	.pt(8px);
+}
+/*#o_shop_collapse_category li
+{
+	.common-div;
+	.pt(8px);
+	border-bottom: 1px dotted #e1dfdf;
+}*/
+.js_attributes .nav-stacked li 
+{
+	.mb(15px);
+	
+	div
+	{
+		
+		.mb(10px);
+		
+		strong
+		{
+			font-weight: normal;
+			.muli-semibold();
+			color: @theme-color;
+			.size(14px);
+		}
+	}
+	ul
+	{
+		margin-left: 0px;
+		
+		li
+		{
+			.mb(5px);
+		
+			label
+				{
+					margin:0px 0px !important;
+					
+					input
+					{
+						margin: 3px 0 0;
+					}
+					span
+					{
+						.size(14px);
+						vertical-align: top;
+						margin-left: 2px;
+					}
+				}
+		}
+	}
+}
+.css_attribute_color
+{
+	width: 15px;
+	height: 15px;
+	.mr(4px); 
+	border-radius: 100%;
+}
+#products_grid
+{
+
+	.oe_product.oe_list
+	{
+		form
+		{
+			padding:5%;
+			
+			.product_price .btn 
+			{
+				padding: 4px 8px;
+			}
+			
+			.oe_subdescription
+			{
+				display:block;
+				margin:0;
+				
+				>div
+				{
+					color:#777;
+					margin: 10px 0;
+				}
+			}
+
+		}
+	}
+}
+.oe_product .ribbon-wrapper
+{
+display:block;
+width: auto;
+height: auto;
+z-index: 7;
+overflow: visible;
+position: absolute;
+top: 10px;
+left: 10px;
+}
+.oe_product .ribbon
+{
+font: unset;
+color: white;
+text-align: center;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-ms-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+position: relative;
+padding: 4px 11px;
+left: 0;
+top: 0px;
+width: auto;
+cursor: default;
+z-index: 999;
+.size(10px);
+}
+
+.oe_list
+{
+	.ribbon-wrapper
+	{
+		left:0;
+	}
+
+
+}
+#o_shop_collapse_category li:not(:last-child)
+{
+	.common-div;
+	border-bottom: 1px dotted #e1dfdf;
+	.pt(8px);
+}
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><data>
+	<template id="assets_frontend_js" inherit_id="website.assets_frontend">
+		
+		<xpath expr="." position="inside">
+			<link href="/octra_gallery/static/src/less/gallery.less" type="text/less"
+				rel="stylesheet" />
+				<link href="/octra_gallery/static/src/less/simplelightbox.css" type="text/less" rel="stylesheet" />
+			<script type="text/javascript" src="/octra_gallery/static/src/js/gallery_carousel_snippent_frontend.js"></script> 
+			<script type="text/javascript" src="/octra_gallery/static/src/js/gallery_carousel_snippent_editor.js"></script> 		
+		</xpath>
+	</template>
+
+</data></odoo>

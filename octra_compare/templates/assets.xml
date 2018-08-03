@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="octra_compare_assets_frontend" inherit_id="web.assets_frontend">
+		<xpath expr="." position="inside">
+			<link rel="stylesheet" type="text/less"
+				href="/octra_compare/static/src/less/compare.less" />
+			<link rel="stylesheet" type="text/less"
+				href="/octra_compare/static/src/less/compare_responsive.less" />
+		</xpath>
+	</template>
+</odoo>

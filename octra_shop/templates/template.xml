@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<template id="octra_shop_products" inherit_id="website_sale.products" name="octra Shop Products" priority="15">
+		<xpath expr="//div[@id='products_grid']/table" position="replace">
+				<table id="product-grid-table" style="width: 100%;">
+			        <t t-foreach="bins" t-as="tr_product">
+			            <t t-foreach="tr_product" t-as="td_product">
+			                <t t-if="td_product">
+			                    <t t-set="product" t-value="td_product['product']"/>
+			                    <div t-attf-class="oe_product oe_grid oe_octra_product">
+			                        <div class="oe_product_cart" t-att-data-publish="product.website_published and 'on' or 'off'">
+			                            <t t-call="website_sale.products_item" />
+			                        </div>
+			                    </div>
+			                </t>
+			            </t>
+			        </t>
+			       </table>
+		</xpath>
+		<xpath expr="//div[@id='products_grid_before']" position="attributes">
+			<attribute name="class">col-md-3 collapse</attribute>
+		</xpath>
+		<xpath expr="//div[@id='products_grid_before']" position="before">
+            <div class="navbar-header octra_toggle_header">
+	            <button type="button" class="navbar-toggle octra_toggle" data-toggle="collapse" data-target="#products_grid_before">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+            </div>
+		</xpath>
+
+		<xpath expr="//div[hasclass('products_pager')]/div/t[@t-call='website_sale.search']" position="replace">
+			
+		</xpath>
+		<xpath expr="//div[hasclass('products_pager')]/div/t[@t-call='website_sale.pricelist_list']" position="replace">
+			
+		</xpath>
+
+		<xpath expr="//div[hasclass('products_pager')]" position="attributes">
+			<attribute name="class">products_pager col-md-9 shop_pager_main</attribute>
+		</xpath>
+
+	</template>
+
+	<template id="octra_products_description" inherit_id="website_sale.products_description" name="Octra Description">
+		<xpath expr="//div[hasclass('oe_subdescription')]" position="attributes">
+			<attribute name="t-if">product.description_sale</attribute>
+		</xpath>
+	</template>
+
+	<template id="octra_products_item" inherit_id="website_sale.products_item" name="Products Items">
+	<xpath expr="//h5/strong" position="replace">
+	<a itemprop="name" class="octra_product_name" t-att-href="keep('/shop/product/%s' % slug(product))" t-att-content="product.name" t-field="product.name" />
+	</xpath>
+	<xpath expr="//div[hasclass('ribbon-wrapper')]" position="replace">
+	<div class="ribbon-wrapper" t-if="product.label_ept_id">
+
+						<div t-field="product.label_ept_id" class="ribbon btn btn-danger sale-btn"></div>
+					</div>
+	</xpath>
+	<xpath expr="//div[hasclass('oe_product_image')]" position="replace">
+	<div class="oe_product_image">
+                    <a itemprop="url" t-att-href="keep('/shop/product/%s' % slug(product))">
+                        <span itemprop="image" t-attf-content="{{request.httprequest.url_root}}web/image/product.template/{{product.id}}/image" t-field="product.image" t-options="{'widget': 'image', 'resize': None if product_image_big else '300x300', 'zoom': 'image'}" t-att-alt="product.name" />
+                    </a>
+                </div>
+	</xpath>
+	</template>
+	
+	
+	 <template id="website_sale.products_list_view" inherit_id="octra_shop.octra_shop_products" active="False" customize_show="True" name="List View">
+      <xpath expr="//table[@id='product-grid-table']" position="replace">
+            <t t-foreach="products" t-as="product">
+                <div class="oe_product oe_list oe_product_cart" t-att-data-publish="product.website_published and 'on' or 'off'">
+                    <t t-call="website_sale.products_item">
+                        <t t-set="show_publish" t-value="True" />
+                    </t>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

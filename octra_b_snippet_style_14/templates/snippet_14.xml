@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+		<template id="octra_style_14" inherit_id="octra_business_snippets.octra_business_snippets" name="octra Snippet" priority="14">
+			<xpath expr="//div[@id='octra_snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+				<t t-snippet="octra_b_snippet_style_14.octra_b_snippet_style_14_template" t-thumbnail="/octra_b_snippet_style_14/static/src/img/snippet_14.jpg"  />
+			</xpath>
+		</template>
+		<template id="octra_b_snippet_style_14_template" name="Style 14">
+			<div class="oe_structure" />
+			<section class="ts14_main_section common-div">
+				<div class="block">
+					<div class="s1_heading_container">
+					<h3 class="ch_h1_class text-center">top chart</h3>
+					<!-- <p class="sep_span_hr"></p> -->
+					</div>
+					<section class="ts14_row_one common-div">
+						<section class="ts14_row_one_div_left">
+							<div class="block">
+								<div class="ts14_img_container">
+									<section><a href="#"><img class="s_image_common" src="/octra_b_snippet_style_14/static/src/img/style_14_img_1.jpg"></img></a></section>
+								</div>
+								<div class="ts14_center_desc">
+									<h3 class="ts14_each_name">Lorem ipsum dolor</h3>
+									<div class="ts14_each_desc">
+									<span class="ts14_product_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </span>
+								
+									<span class="ts14_price_p">$200.00</span>
+							
+									</div>
+								</div>
+									<hr class="ts14_border common-div"/>
+							</div>
+						
+						</section>
+						<section class="ts14_row_one_div_left">
+							<div class="block">
+								<div class="ts14_img_container">
+									<section><a href="#"><img class="s_image_common" src="/octra_b_snippet_style_14/static/src/img/style_14_img_2.jpg"></img></a></section>
+								</div>
+								<div class="ts14_center_desc">
+									<h3 class="ts14_each_name">Lorem ipsum dolor</h3>
+									<div class="ts14_each_desc">
+									<span class="ts14_product_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </span>
+								
+									<span class="ts14_price_p">$200.00</span>
+							
+									</div>
+								</div>
+								<hr class="ts14_border common-div"/>
+							</div>
+						</section>
+					</section>
+					<section class="ts14_row_one common-div">
+						<section class="ts14_row_one_div_left">
+							<div class="block">
+								<div class="ts14_img_container">
+									<section><a href="#"><img class="s_image_common" src="/octra_b_snippet_style_14/static/src/img/style_14_img_3.jpg"></img></a></section>
+								</div>
+								<div class="ts14_center_desc">
+									<h3 class="ts14_each_name">Lorem ipsum dolor</h3>
+									<div class="ts14_each_desc">
+									<span class="ts14_product_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </span>
+								
+									<span class="ts14_price_p">$200.00</span>
+							
+									</div>
+								</div>
+									<hr class="ts14_border common-div"/>
+							</div>
+						
+						</section>
+						<section class="ts14_row_one_div_left">
+							<div class="block">
+								<div class="ts14_img_container">
+									<section><a href="#"><img class="s_image_common" src="/octra_b_snippet_style_14/static/src/img/style_14_img_4.jpg"></img></a></section>
+								</div>
+								<div class="ts14_center_desc">
+									<h3 class="ts14_each_name">Lorem ipsum dolor</h3>
+									<div class="ts14_each_desc">
+									<span class="ts14_product_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </span>
+								
+									<span class="ts14_price_p">$200.00</span>
+							
+									</div>
+								</div>
+								<hr class="ts14_border common-div"/>
+							</div>
+						</section>
+					</section>
+					<section class="ts14_row_one common-div">
+						<section class="ts14_row_one_div_left">
+							<div class="block">
+								<div class="ts14_img_container">
+									<section><a href="#"><img class="s_image_common" src="/octra_b_snippet_style_14/static/src/img/style_14_img_5.jpg"></img></a></section>
+								</div>
+								<div class="ts14_center_desc">
+									<h3 class="ts14_each_name">Lorem ipsum dolor</h3>
+									<div class="ts14_each_desc">
+									<span class="ts14_product_desc"><section>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </section> </span>
+								
+									<span class="ts14_price_p">$200.00</span>
+							
+									</div>
+								</div>
+								<hr class="ts14_border_last common-div"/>
+							</div>
+						</section>
+						<section class="ts14_row_one_div_left">
+							<div class="block">
+								<div class="ts14_img_container">
+									<section><a href="#"><img class="s_image_common" src="/octra_b_snippet_style_14/static/src/img/style_14_img_6.jpg"></img></a></section>
+								</div>
+								<div class="ts14_center_desc">
+									<h3 class="ts14_each_name">Lorem ipsum dolor</h3>
+									<div class="ts14_each_desc">
+									<span class="ts14_product_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </span>
+								
+									<span class="ts14_price_p">$200.00</span>
+							
+									</div>
+								</div>
+							</div>
+						</section>
+					</section>
+				</div>
+			</section>
+		</template>
+</odoo>

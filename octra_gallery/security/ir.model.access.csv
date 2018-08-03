@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+portfolio_category_all,portfolio.category,model_portfolio_category,,1,0,0,0
+portfolio_category,portfolio.category,model_portfolio_category,website.group_website_designer,1,1,1,1
+portfolio_all,portfolio,model_portfolio,,1,0,0,0
+portfolio,portfolio,model_portfolio,website.group_website_designer,1,1,1,1
+multi_image_all,Multi Portfolio Images,model_multi_img,,1,0,0,0
+multi_image,Multi Portfolio,model_multi_img,website.group_website_designer,1,1,1,1

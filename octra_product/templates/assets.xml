@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="product_assets_frontend" inherit_id="web.assets_frontend">
+		<xpath expr="." position="inside">
+			<link rel="stylesheet" type="text/less"
+				href="/octra_product/static/src/less/product.less" />
+			<link rel="stylesheet" type="text/less"
+				href="/octra_product/static/src/less/product_responsive.less" />
+		</xpath>
+	</template>
+</odoo>

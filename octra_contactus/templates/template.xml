@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="octra_contactus_contactus" inherit_id="website.contactus">
+		<xpath expr="//h1" position="attributes">
+			<attribute name="class">cu_heading</attribute>
+		</xpath>
+		<xpath expr="//h1[hasclass('cu_heading')]" position="replace">
+		
+		</xpath>
+		<xpath expr="//div[hasclass('col-md-8')]/div/div" position="before">
+			<h1 class="cu_heading">Contact us</h1>
+		</xpath>
+		<xpath expr="//div[hasclass('col-md-8')]/div/div/p" position="attributes">
+			<attribute name="class">cu_subtitle</attribute>
+		</xpath>
+		<xpath expr="//div[hasclass('col-md-8')]/div/div/p[2]" position="attributes">
+			<attribute name="class">cu_subtitle</attribute>
+		</xpath>
+		<xpath expr="//div[hasclass('col-md-4')]" position="attributes">
+			<attribute name="class">col-md-4 mt64</attribute>
+		</xpath>
+	</template>
+</odoo>

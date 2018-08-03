@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="octra_style_2" inherit_id="octra_business_snippets.octra_business_snippets"
+		name="octra Snippet" priority="2">
+		<xpath
+			expr="//div[@id='octra_snippet_structure']/div[hasclass('o_panel_body')]"
+			position="inside">
+			<t t-snippet="octra_b_snippet_style_2.octra_b_snippet_style_2_template"
+				t-thumbnail="/octra_b_snippet_style_2/static/src/img/snippet_2.jpg" />
+		</xpath>
+	</template>
+	<template id="octra_b_snippet_style_2_template" name="Style 2">
+	<div class="oe_structure" />
+		<section class="ts_6_main_section">
+			<div class="ts_6_row_one">
+				<div class="ts_6_row_one_img_l_div">
+					<section>
+						<a href="#">
+							<img src="/octra_b_snippet_style_2/static/src/img/style_6_img_1.jpg"
+								class="s_image_common s6_img_height"></img>
+						</a>
+					</section>
+				</div>
+				<div class="ts_6_row_one_content_r_div">
+					<section class="ts_6_content_r_sub">
+						<h3 class="ch_h1_class">Chief Recommended</h3>
+						<p class="chs_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. 
+						</p>
+						<a href="#" class="octra_btn">
+							
+									Buy Theme
+							
+						</a>
+					</section>
+				</div>
+			</div>
+
+			<div class="ts_6_row_two">
+				<div class="ts_6_row_one_content_l_div">
+					<section class="ts_6_content_l_sub">
+						<h3 class="ch_h1_class">Delightful Experience</h3>
+						<p class="chs_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. 
+						</p>
+						<a href="#" class="octra_btn">
+							
+									Buy Theme
+								
+						</a>
+					</section>
+				</div>
+				<div class="ts_6_row_one_img_r_div">
+					<section>
+						<a href="#">
+							<img src="/octra_b_snippet_style_2/static/src/img/style_6_img_2.jpg"
+								class="s_image_common s6_img_height"></img>
+						</a>
+					</section>
+				</div>
+			</div>
+		</section>
+	</template>
+</odoo>

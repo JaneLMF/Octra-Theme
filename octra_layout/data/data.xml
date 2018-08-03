@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	<data noupdate="0">
+		<record id="octra_categories" model="website.menu">
+			<field name="name">All Categories</field>
+			<field name="parent_id" ref="website.main_menu" />
+			<field name="is_dynamic_menu" eval="True"></field>
+			<field name="sequence" type="int">61</field>
+		</record>
+		
+		<record id="octra_collection" model="website.menu">
+			<field name="name">Collection</field>
+			<!-- <field name="url">/</field> -->
+			<field name="parent_id" ref="website.main_menu" />
+			<field name="menu_html">
+				<![CDATA[
+				
+					<div class="static-menu-div-maxw">
+						<div class="custom-menu-inside-left-div">
+							<div class="category-heading-div">
+								<div class="category-heading-center">
+									<a class="" href="/shop">Casual</a>
+									<span class="fa fa-chevron-right show-more" tabindex="-1"></span>
+									<ul class="expand-div">
+										<hr class="category-heading-p-hr" />
+										<h4><a href="/shop">Men Casuals</a></h4>
+										<h4><a href="/shop">Women Casuals</a></h4>
+										<h4><a href="/shop">Men Casuals</a></h4>
+										<h4><a href="/shop">Women Casuals</a></h4>
+									</ul>
+								</div>
+							</div>
+							<div class="category-heading-div">
+								<div class="category-heading-center">
+									<a class="" href="/shop">Formal</a>
+									<span class="fa fa-chevron-right show-more" tabindex="-1"></span>
+									<ul class="expand-div">
+										<hr class="category-heading-p-hr" />
+										<h4><a href="/shop">Men Formal Shoes</a></h4>
+										<h4><a href="/shop">Women Formal Shoes</a></h4>
+										<h4><a href="/shop">Men Formal Shoes</a></h4>
+										<h4><a href="/shop">Women Formal Shoes</a></h4>
+									</ul>
+								</div>
+							</div>
+							<div class="category-heading-div">
+								<div class="category-heading-center">
+									<a class="" href="/shop">Slipper</a>
+									<span class="fa fa-chevron-right show-more" tabindex="-1"></span>
+									<ul class="expand-div">
+										<hr class="category-heading-p-hr" />
+										<h4><a href="/shop">Men Slipper</a></h4>
+										<h4><a href="/shop">Women Slipper</a></h4>
+										<h4><a href="/shop">Men Slippers</a></h4>
+										<h4><a href="/shop">Women Slipper</a></h4>
+									</ul>
+								</div>
+							</div>
+							<div class="category-heading-div">
+								<div class="category-heading-center">
+									<a class="" href="/shop">Sandal</a>
+									<span class="fa fa-chevron-right show-more" tabindex="-1"></span>
+									<ul class="expand-div">
+										<hr class="category-heading-p-hr" />
+										<h4><a href="/shop">Men Sandals</a></h4>
+										<h4><a href="/shop">Women Sandals</a></h4>
+										<h4><a href="/shop">Men Sandals</a></h4>
+										<h4><a href="/shop">Women Sandals</a></h4>
+									</ul>
+								</div>
+							</div>
+							<div class="category-heading-div">
+								<div class="category-heading-center">
+									<a class="" href="/shop">Sports</a>
+									<span class="fa fa-chevron-right show-more" tabindex="-1"></span>
+									<ul class="expand-div">
+										<hr class="category-heading-p-hr" />
+										<h4><a href="/shop">Men Sports Shoes</a></h4>
+										<h4><a href="/shop">Women Sports Shoes</a></h4>
+										<h4><a href="/shop">Men Sports Shoes</a></h4>
+										<h4><a href="/shop">Women Sports Shoes</a></h4>
+									</ul>
+								</div>
+							</div>
+							<div class="category-heading-div">
+								<div class="category-heading-center">
+									<a class="" href="/shop">Formal</a>
+									<span class="fa fa-chevron-right show-more" tabindex="-1"></span>
+									<ul class="expand-div">
+										<hr class="category-heading-p-hr" />
+										<h4><a href="/shop">Men Formals</a></h4>
+										<h4><a href="/shop">Women Formals</a></h4>
+										<h4><a href="/shop">Men Formals</a></h4>
+										<h4><a href="/shop">Women Formals</a></h4>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="custom-menu-inside-right-div">
+							<div class="static-image-div">
+								<img src="/octra_layout/static/src/img/static-menu.jpg"></img>
+							</div>
+						</div>
+					</div>
+				
+				]]>
+			</field>
+			<field name="sequence" type="int">62</field>
+		</record>
+	</data>
+</odoo>

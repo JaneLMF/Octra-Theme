@@ -1,0 +1,48 @@
+@media (max-width:1000px){
+	.wishlist-section{
+		overflow-y: auto;
+		width: 100% !important;
+		
+		& .table{
+			width: 800px;
+			overflow-x: auto;
+			display: block;
+			max-width: 800px;
+		}
+	}
+}
+
+@media (max-width:767px){
+	.octra_td-content{
+		.p(15px) !important;
+		.o_wish_rm{
+			display: block;
+			.mt(11px);
+		}
+	}
+	.octra_td-price{
+		width: 19% !important;
+	}
+	.wishlist-section{
+		& .table{
+			max-width: 600px;
+			border: unset;
+		}
+		.octra_td-img
+		{
+			min-width:100px !important;
+		}
+	}
+	
+}
+@media (max-width:400px){
+	.octra_td-content{
+		.p(11px) !important;
+		.size(12px);
+		width: 30%;
+	}
+	.octra_td-price{
+		width: 15% !important;
+		.size(12px);
+	}
+}

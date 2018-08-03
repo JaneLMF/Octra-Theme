@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+	<template id="snippet_style_tewnty" inherit_id="octra_business_snippets.octra_business_snippets"
+		name="infigo snippet" priority="20">
+		<xpath
+			expr="//div[@id='octra_snippet_structure']/div[hasclass('o_panel_body')]"
+			position="inside">
+			<t t-snippet="octra_b_snippet_style_20.octra_b_snippet_style_20_template"
+			t-thumbnail="/octra_b_snippet_style_20/static/src/img/snippet_15.jpg" />
+		</xpath>
+	</template>
+	
+	<template id="octra_b_snippet_style_20_template" name="Style 20">
+		<div class="oe_structure" />
+		<section class="s_infigo_content">
+			 <div class="container">
+	            <div class="row">  
+					<p class="cc_content_class">Shopping for chairs online can be stressful at best, without the touch and feel element of walking into a traditional furniture retailer.Through direct dealings with the designers and creators themselves, we are able to secure high-quality products with a price tag that doesn’t break the budget.Our collection of chairs online displays the quality workmanship and passion of our craftsmen </p>
+				</div>
+				</div>
+		</section>
+	
+	</template>
+</odoo>

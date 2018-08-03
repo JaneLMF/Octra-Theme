@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="snippet_style_4_heading" inherit_id="octra_business_snippets.octra_business_snippets"
+		name="Heading Snippet" priority="4">
+		<xpath
+			expr="//div[@id='octra_snippet_structure']/div[hasclass('o_panel_body')]"
+			position="inside">
+			<t t-snippet="octra_b_snippet_style_4.snippet_style_4_heading_template"
+				t-thumbnail="/octra_b_snippet_style_4/static/src/img/snippet_4.jpg" />
+		</xpath>
+	</template>
+	<template id="snippet_style_4_heading_template" name="Style 4">
+	<div class="oe_structure" />
+		<section class="s_octra_3_content_block">
+			<div class="block s_octra_3_content_sub">
+				<div class="row">
+					<section class="s_octra_section">
+						<section class="s_icon">
+							<span class="s_licon">
+								<img src="/octra_b_snippet_style_4/static/src/img/4a.png"/>
+							</span>
+						</section>
+						<section class="s_content_right">
+							<section class="s_content_r_heading">
+								<h3 class="s_octra_h">
+									Easy to Customize
+								</h3>
+							</section>
+							<section>
+								<p class="s_content_p">
+									Ut wisi enim ad minim veniam, quis nostrud exerci tation
+									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+									consequat.
+								</p>
+							</section>
+						</section>
+					</section>
+					<section class="s_octra_section">
+						<section class="s_icon">
+							<span class="s_licon">
+								<img src="/octra_b_snippet_style_4/static/src/img/4b.png"/>
+							</span>
+						</section>
+						<section class="s_content_right">
+							<section class="s_content_r_heading">
+								<h3 class="s_octra_h">
+								Translation Ready
+								</h3>
+							</section>
+							<section>
+								<p class="s_content_p">
+									Ut wisi enim ad minim veniam, quis nostrud exerci tation
+									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+									consequat.
+								</p>
+							</section>
+						</section>
+					</section>
+					<section class="s_octra_section">
+						<section class="s_icon">
+							<span class="s_licon">
+								<img src="/octra_b_snippet_style_4/static/src/img/4c.png"/>
+							</span>
+						</section>
+						<section class="s_content_right">
+							<section class="s_content_r_heading">
+								<h3 class="s_octra_h">
+									Unmatched Power 
+								</h3>
+							</section>
+							<section>
+								<p class="s_content_p">
+									Ut wisi enim ad minim veniam, quis nostrud exerci tation
+									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+									consequat.
+								</p>
+							</section>
+						</section>
+					</section>
+					<section class="s_octra_section">
+						<section class="s_icon">
+							<span class="s_licon">
+								<img src="/octra_b_snippet_style_4/static/src/img/4d.png"/>
+							</span>
+						</section>
+						<section class="s_content_right">
+							<section class="s_content_r_heading">
+								<h3 class="s_octra_h">
+									Inventive Elements
+								</h3>
+							</section>
+							<section>
+								<p class="s_content_p">
+									Ut wisi enim ad minim veniam, quis nostrud exerci tation
+									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+									consequat.
+								</p>
+							</section>
+						</section>
+					</section>
+					<section class="s_octra_section">
+						<section class="s_icon">
+							<span class="s_licon">
+								<img src="/octra_b_snippet_style_4/static/src/img/4e.png"/>
+							</span>
+						</section>
+						<section class="s_content_right">
+							<section class="s_content_r_heading">
+								<h3 class="s_octra_h">
+									Luxurious Layouts 
+								</h3>
+							</section>
+							<section>
+								<p class="s_content_p">
+									Ut wisi enim ad minim veniam, quis nostrud exerci tation
+									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+									consequat.
+								</p>
+							</section>
+						</section>
+					</section>
+					<section class="s_octra_section">
+						<section class="s_icon">
+							<span class="s_licon">
+								<img src="/octra_b_snippet_style_4/static/src/img/4f.png"/>
+							</span>
+						</section>
+						<section class="s_content_right">
+							<section class="s_content_r_heading">
+								<h3 class="s_octra_h">
+									Supreme Blogging 
+								</h3>
+							</section>
+							<section>
+								<p class="s_content_p">
+									Ut wisi enim ad minim veniam, quis nostrud exerci tation
+									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+									consequat.
+								</p>
+							</section>
+						</section>
+					</section>
+					
+				</div>
+			</div>
+		</section>
+	</template>
+</odoo>

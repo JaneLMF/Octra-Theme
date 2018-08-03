@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="assets_frontend_js"
+		name="Employee carousel snippets JS frontend assets"
+		inherit_id="website.assets_frontend">
+		<xpath expr="//script[last()]" position="after">
+			<script type="text/javascript"
+				src="/octra_employee_carousel/static/src/js/employee_carousel_snippet_frontend.js"></script>
+				<script type="text/javascript"
+				src="/octra_employee_carousel/static/src/js/employee_carousel_snippent_editor.js"></script>
+			 <script type="text/javascript"
+				src="/octra_employee_carousel/static/src/js/slider_custom.js"></script>
+				<link href="/octra_employee_carousel/static/src/less/employee_style_1.less" type="text/less"
+				rel="stylesheet" />
+			<link href="/octra_employee_carousel/static/src/less/responsive_employee_style_1.less" type="text/less"
+				rel="stylesheet" />
+		</xpath>
+	</template>
+</odoo>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+		<template id="octra_style_16" inherit_id="octra_business_snippets.octra_business_snippets" name="octra Snippet" priority="16">
+			<xpath expr="//div[@id='octra_snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+				<t t-snippet="octra_b_snippet_style_16.octra_b_snippet_style_16_template" t-thumbnail="/octra_b_snippet_style_16/static/src/img/snippet_16.jpg"  />
+			</xpath>
+		</template>
+		<template id="octra_b_snippet_style_16_template" name="Style 16">
+		<div class="oe_structure" />
+			<section>
+		<!-- <div id="services" style="height: 90px;"></div> -->
+		
+		<div class="div_whole_services_page">
+				<div class="sub_div_services">
+				<div class="div_heading_services">
+					<h1 class="ch_h1_class text-center">Our Services</h1>
+					<hr class="hr_class_common_services border-grey"></hr>
+				</div>
+				<section class="services_sub_heading_div_main_class">
+					<p class="para_sub_class_services">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+				</section>
+
+				<div class="services_main_div">
+					<div class="common_class_div_services_only">
+						<div class="div_main_class_number_heading_services">
+							<section class="points_services_div">
+								<section class="points_services_div_sub_class">
+										<section class="div_class_icon_round_main_service">
+											<section class="div_class_icon_round_sub_service">
+												<div class="div_class_icon_round_service">
+												<i class="fa fa-lightbulb-o fa-3x font-white-hover icon_class_designing"></i>
+												</div>
+											</section>
+										</section>
+										<section class="div_class_icon_round_main_service_para">
+											<section class="div_class_icon_round_sun_service_para">
+												<p class="para_class_heading_class_services lato-Regular font-black">Designing</p>
+											</section>
+										</section>
+								</section>
+							</section>
+						</div>
+						<section class="div_class_main_content_services_div">
+							<section class="para_class_services">
+								<hr class="hr_class_common_services_content"></hr>
+								<p class="para_class_common_font_light_services">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipisicing elit
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</section>
+						</section>
+					</div>
+					<div class="common_class_div_services_only">
+						<div class="div_main_class_number_heading_services">
+							<div class="points_services_div">
+								<div class="points_services_div_sub_class">
+										<section class="div_class_icon_round_main_service">
+											<section class="div_class_icon_round_sub_service">
+												<div class="div_class_icon_round_service">
+												<i class="fa fa-cogs fa-3x font-white-hover icon_class_development"></i>
+												</div>
+											</section>
+										</section>
+										<section class="div_class_icon_round_main_service_para">
+											<section class="div_class_icon_round_sun_service_para">
+												<p class="para_class_heading_class_services lato-Regular font-black">Development</p>
+											</section>
+										</section>
+								</div>
+							</div>
+						</div>
+						<section class="div_class_main_content_services_div">
+							<section class="para_class_services">
+								<hr class="hr_class_common_services_content"></hr>
+								<p class="para_class_common_font_light_services">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipisicing elit
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</section>
+						</section>
+					</div>
+					<div class="common_class_div_services_only">
+						<section class="div_main_class_number_heading_services">
+							<section class="points_services_div">
+								<section class="points_services_div_sub_class">
+										<section class="div_class_icon_round_main_service">
+											<section class="div_class_icon_round_sub_service">
+												<section class="div_class_icon_round_service">
+												<i class="fa fa-laptop fa-3x font-white-hover icon_class_web"></i>
+												</section>
+											</section>
+										</section>
+										<section class="div_class_icon_round_main_service_para">
+											<section class="div_class_icon_round_sun_service_para">
+												<p class="para_class_heading_class_services lato-Regular font-black">Web Design</p>
+											</section>
+										</section>
+								</section>
+							</section>
+						</section>
+						<section class="div_class_main_content_services_div">
+							<section class="para_class_services">
+								<hr class="hr_class_common_services_content"></hr>
+								<p class="para_class_common_font_light_services">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipisicing elit
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</section>
+						</section>
+					</div>
+					<div class="common_class_div_services_only">
+						<section class="div_main_class_number_heading_services">
+							<section class="points_services_div">
+								<section class="points_services_div_sub_class">
+										<section class="div_class_icon_round_main_service">
+											<section class="div_class_icon_round_sub_service">
+												<section class="div_class_icon_round_service">
+												<i class="fa fa-cogs fa-3x font-white-hover icon_class_development"></i>
+												</section>
+											</section>
+										</section>
+										<section class="div_class_icon_round_main_service_para">
+											<section class="div_class_icon_round_sun_service_para">
+												<p class="para_class_heading_class_services lato-Regular font-black">Branding</p>
+											</section>
+										</section>
+								</section>
+							</section>
+						</section>
+						<section class="div_class_main_content_services_div">
+							<section class="para_class_services">
+								<hr class="hr_class_common_services_content"></hr>
+								<p class="para_class_common_font_light_services">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipisicing elit
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</section>
+						</section>
+					</div>
+					<div class="common_class_div_services_only">
+						<div class="div_main_class_number_heading_services">
+							<div class="points_services_div">
+								<div class="points_services_div_sub_class">
+										<section class="div_class_icon_round_main_service">
+											<section class="div_class_icon_round_sub_service">
+												<div class="div_class_icon_round_service">
+												<i class="fa fa-paint-brush fa-3x font-white-hover icon_class_graphics"></i>
+												</div>
+											</section>
+										</section>
+										<section class="div_class_icon_round_main_service_para">
+											<section class="div_class_icon_round_sun_service_para">
+												<p class="para_class_heading_class_services lato-Regular font-black">Graphic</p>
+											</section>
+										</section>
+								</div>
+							</div>
+						</div>
+						<div class="div_class_main_content_services_div">
+							<section class="para_class_services">
+								<hr class="hr_class_common_services_content"></hr>
+								<p class="para_class_common_font_light_services">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipisicing elit
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+		</template>
+</odoo>

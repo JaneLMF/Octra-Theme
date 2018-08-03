@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+		<template id="octra_style_12" inherit_id="octra_business_snippets.octra_business_snippets" name="octra Snippet" priority="12">
+			<xpath expr="//div[@id='octra_snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+				<t t-snippet="octra_b_snippet_style_12.octra_b_snippet_style_12_template" t-thumbnail="/octra_b_snippet_style_12/static/src/img/snippet_12.jpg"  />
+			</xpath>
+		</template>
+		<template id="octra_b_snippet_style_12_template" name="Style 12">
+			<div class="oe_structure" />
+				<section>
+			<div class="octra_home_second_section">
+				<div class="octra_home_second_sub_section">
+					<div class="chs_img_container">
+						<a href="#">
+						<img class="s_image_common" src="/octra_b_snippet_style_12/static/src/img/style_12_img_1.jpg"></img>
+						</a>
+					</div>
+					<div class="chs_detail_container">
+						<div class="chs_detail_sub block">
+						<h2 class="chs_heading">True italian cuisine
+						</h2>
+						<p class="chs_para">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. 
+						</p>
+						<a href="#" class="octra_btn">
+										
+												read more
+										
+									</a>
+									</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		</template>
+</odoo>

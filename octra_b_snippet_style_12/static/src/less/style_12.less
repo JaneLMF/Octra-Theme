@@ -1,0 +1,106 @@
+.octra_home_second_section
+{
+	display:inline-block;
+	width:100%;
+	.bg(#fff);
+	
+	.octra_home_second_sub_section
+	{
+		display:block;
+		width:90%;
+		margin:0px auto;
+		max-width:1400px;
+		
+		.chs_img_container
+		{
+			width:50%;
+			display:block;
+			.left;
+			
+			img
+			{
+				max-width:100%;
+				max-height: 480px;
+			}
+		}	
+		.chs_detail_container
+		{
+			width:50%;
+			display:block;
+			.left;
+			
+			
+			.chs_btn_readmore
+			{	display: inline-block;
+				.size(14px);
+				line-height: 46px;
+				height: 46px;
+				letter-spacing: 2px;
+				padding: 0 30px;
+				text-align: center;
+				text-transform: uppercase;
+				background: @theme-color;
+				border-radius: 25px;
+				border: none;
+				color: #fff;
+				transition: all 300ms;
+				text-decoration: none;
+				.muli-regular;
+			
+				&:hover
+				{
+					background: #333;
+					color:#fff;	
+					transition: background-color linear 0.5s;
+				}
+			}
+		}
+	}
+}
+.chs_para
+			{
+				.size(15px);
+				line-height: 180%;
+				.mb(41px) !important;
+				color: #898383;
+				.muli-light();
+				.mt(25px);
+				max-width:500px;
+			}
+@media (max-width: 800px) {
+	.octra_home_second_section .octra_home_second_sub_section .chs_img_container {
+		width: 100%;
+		.center;
+    }
+    .octra_home_second_section .octra_home_second_sub_section .chs_detail_container {
+		width: 100%;
+		.center;
+		.pl(0);
+		.mt(5%);
+    }
+    .octra_home_second_section .octra_home_second_sub_section .chs_detail_container .chs_heading {
+		.size(28px);
+		.center;
+    }
+    .octra_home_second_section .octra_home_second_sub_section .chs_detail_container .chs_para {
+		.size(14px);
+		.center;
+    }
+    .octra_home_second_section .octra_home_second_sub_section .chs_img_container img {
+		max-width: 80%;
+	}
+}
+@media (max-width: 600px) {
+	.octra_home_second_section .octra_home_second_sub_section .chs_img_container img {
+		max-width: 90%;
+	}
+	.octra_home_second_section .octra_home_second_sub_section .chs_detail_container .chs_heading {
+		.size(20px) !important;
+	}
+	.octra_home_second_section .octra_home_second_sub_section .chs_detail_container .chs_para {
+		.size(13px);
+		.mb(21px);
+		.mt(9px);
+	}
+}
+

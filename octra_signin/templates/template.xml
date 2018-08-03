@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	 <template id="octra_signin_c_signin" inherit_id="web.login">
+		<xpath expr="//form[hasclass('oe_login_form')]" position="attributes">
+			<attribute name="class">oe_login_form login_area_container</attribute>
+		</xpath>
+		<xpath expr="//div/label[@for='db']" position="attributes">
+			<attribute name="class">control-label c_login_lbl</attribute>
+		</xpath>
+		<xpath expr="//div/label[@for='login']" position="attributes">
+			<attribute name="class">control-label c_login_lbl</attribute>
+		</xpath>
+		<xpath expr="//div/label[@for='password']" position="attributes">
+		 	<attribute name="class">control-label  c_login_lbl</attribute>
+		</xpath>
+		<xpath expr="//input[@name='login']" position="attributes">
+			<attribute name="class">form-control c-login-input</attribute>
+		</xpath>
+		<xpath expr="//input[@name='login']" position="inside">
+			 <span class="focus-border"></span>
+		</xpath>
+		<xpath expr="//input[@name='password']" position="attributes">
+			<attribute name="class">form-control c-login-input</attribute>
+		</xpath>
+		<xpath expr="//input[@name='password']" position="inside">
+			<span class="focus-border"></span>
+		</xpath>
+		<xpath expr="//input[@name='db']" position="attributes">
+			<attribute name="class">form-control db_input</attribute>
+		</xpath>
+		<xpath expr="//div[hasclass('oe_login_buttons')]/button[@type='submit']" position="attributes">
+			<attribute name="class">btn btn-primary login_btn_style</attribute>
+		</xpath>
+	</template>
+
+	<template id="octra_signin_authsignup_login" inherit_id="auth_signup.login">
+		<xpath expr="//a[@t-if='reset_password_enabled']" position="attributes">
+			<attribute name="class">btn-link pull-right reset_pw_btn common-div</attribute>
+		</xpath>
+		<xpath expr="//a[@t-if='signup_enabled']" position="attributes">
+			<attribute name="class">btn-link pull-right signup_btn common-div</attribute>
+		</xpath>
+	</template>
+
+	<template id="octra_signin_auth_signup_reset_password" inherit_id="auth_signup.reset_password">
+		<xpath expr="//label[@for='login']" position="attributes">
+			<attribute name="class">control-label  c_login_lbl</attribute>
+		</xpath>
+		<xpath expr="//input[@name='login']" position="attributes">
+			<attribute name="class">form-control c-login-input</attribute>
+		</xpath>
+		<xpath expr="//input[@name='login']" position="after">
+			<span class="focus-border"></span>
+		</xpath>
+	</template>
+
+	<template id="octra_signin_auth_signup" inherit_id="auth_signup.signup">
+		<xpath expr="//form[hasclass('oe_signup_form')]" position="attributes">
+			<attribute name="class">oe_signup_form signup_form_container</attribute>
+		</xpath>
+		<xpath expr="//button[@type='submit']" position="attributes">
+			<attribute name="class">btn btn-primary signup_btn_style</attribute>
+		</xpath>
+		<xpath expr="//div[hasclass('oe_login_buttons')]/a" position="attributes">
+			<attribute name="class">btn-link pull-right already_acc_btn common-div</attribute>
+		</xpath>
+	</template>
+	
+	<template id="octra_signin_auth_signup_fields" inherit_id="auth_signup.fields">
+		<xpath expr="//label[hasclass('control-label')]" position="attributes">
+		<attribute name="class">control-label  c_login_lbl</attribute>
+		</xpath>
+		 <xpath expr="//div[2]/label" position="attributes">
+		<attribute name="class">control-label  c_login_lbl</attribute>
+		</xpath>
+		<xpath expr="//div[3]/label" position="attributes">
+		<attribute name="class">control-label  c_login_lbl</attribute>
+		</xpath>
+		<xpath expr="//div[4]/label" position="attributes">
+		<attribute name="class">control-label  c_login_lbl</attribute>
+		</xpath> 
+		 <xpath expr="//div[hasclass('form-group')]/input" position="attributes">
+		 	<attribute name="class">form-control c-login-input</attribute>
+		 </xpath>
+		  <xpath expr="//div[hasclass('form-group')]/input" position="inside">
+		  	<span class="focus-border"></span>
+		  </xpath>
+		 <xpath expr="//div[hasclass('form-group')][2]/input" position="attributes">
+		 	<attribute name="class">form-control c-login-input</attribute>
+		 </xpath>
+		 <xpath expr="//div[hasclass('form-group')][2]/input" position="inside">
+		 	<span class="focus-border"></span>
+		 </xpath>
+		 <xpath expr="//div[hasclass('form-group')][3]/input" position="attributes">
+		 	<attribute name="class">form-control c-login-input</attribute>
+		 </xpath>
+		  <xpath expr="//div[hasclass('form-group')][3]/input" position="inside">
+		  	<span class="focus-border"></span>
+		  </xpath>
+		 <xpath expr="//div[hasclass('form-group')][4]/input" position="attributes">
+		 	<attribute name="class">form-control c-login-input</attribute>
+		 </xpath>
+		 <xpath expr="//div[hasclass('form-group')][4]/input" position="inside">
+		 	<span class="focus-border"></span>
+		 </xpath>
+	</template>
+
+
+</odoo>

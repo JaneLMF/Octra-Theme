@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="gallery_static_carousel_in_snippets"
+			inherit_id="website.snippets" priority="25">
+			<xpath expr="//div[hasclass('o_panel_body')]" position="inside">
+				<t t-snippet="octra_gallery.gallery_carousel_snippet_body"
+					t-thumbnail="/octra_gallery/static/src/img/snippet.jpg" />
+			</xpath>
+		</template>
+		<!-- ======== E-Commerce Product Carousel Snippets ======== -->
+		<!--E-Commerce Product Carousel Snippet's Body -->
+		<template id="gallery_carousel_snippet_body" name="Gallery">
+			<section class="section_gallery_carousel common-div">
+				<div class="mask_cover"></div>
+				<div class="js_get_gallery" data-isemipro="true" />
+			</section>
+		</template>
+
+		<template id="gallery_carousel_snippet_head">
+			<t t-if="title">
+				<div class="headline_tab catg_headline_tab">
+					<a class="filter_gallery_title" data-id="all">
+						<p class="text-center ctg_name_p" t-esc="default_title"></p>
+					</a>
+					<t t-foreach="title" t-as="obj_title">
+						<a class="filter_gallery_title" t-att-data-id="obj_title.id">
+							<p class="text-center ctg_name_p" t-esc="obj_title.name"></p>
+						</a>
+					</t>
+				</div>
+				<div class="gallery_data"></div>
+			</t>
+		</template>
+
+		<template id="gallery_carousel_snippet_data" name="Gallery Carousel Snippets Data">
+			<t t-if="portfolio">
+				<div id="gallery_carousel_slider">
+					<t t-foreach="portfolio" t-as="obj">
+						<div class="common_class_to_show gallery_img_container">
+							<div class="">
+								<div class="ctg_img_a" t-att-data-id="'%s' % obj.id">
+									<div class="gallery_img_overlay"></div>
+									<img t-att-src="website.image_url(obj,'image')" class="img img-responsive g_img_div"
+										alt="" t-att-id="obj.id" t-att-title="obj.name"></img>
+								</div>
+								<p class="img_project_title" t-field="obj.name"></p>
+								<div class="gallery_icons common-div">
+									<div class="gallery_icons_sub_div">
+										<div class="gallery_link_url" t-if="obj.portfolio_url">
+											<a t-att-href="obj.portfolio_url">
+												<i class="fa fa-link" aria-hidden="true"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</t>
+					<div class="gallery" style="display:none;"></div>
+				</div>
+				
+			</t>
+		</template>
+
+
+		<template id="octra_gallery_project_images">
+			<a t-att-href="website.image_url(project_images,'image')" class="big gallery_a_o">
+				<img t-att-src="website.image_url(project_images,'image')"
+					class="img img-responsive" alt="" t-att-title="project_images.desc"></img>
+			</a>
+
+			<t t-foreach="project_images.multi_image_ids" t-as="pf_img">
+				<a t-att-href="website.image_url(pf_img,'image_id')" class="big gallery_a_o">
+					<img t-att-src="website.image_url(pf_img,'image_id')" class="img img-responsive"
+						alt="" t-att-title="project_images.desc"></img>
+				</a>
+			</t>
+		</template>
+	</data>
+</openerp>

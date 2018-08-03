@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!-- Replace Default cart in menu -->
+	<template id="octra_layout_header" inherit_id="website_sale.header">
+		<xpath expr="//a[@href='/shop/cart']" position="replace"></xpath>
+	</template>
+	
+	
+	<template id="octra_cart_octra_layout" inherit_id="octra_layout.octra_layout">
+		<xpath expr="//ul[@id='header_right_icons']" position="inside">
+			<t t-set="website_sale_order" t-value="website.sale_get_order()" />
+            <li id="my_cart">
+                <a href="/shop/cart">
+				<img src="/octra_cart/static/src/img/cart.png"></img>
+                   <sup t-attf-class="my_cart_quantity" t-esc="website_sale_order and website_sale_order.cart_quantity or ''" t-if="website_sale_order and website_sale_order.cart_quantity" />
+                </a>
+            </li>
+		</xpath>
+	</template>
+	<template id="octra_cart" inherit_id="website_sale.cart" name="Octra Cart">
+	<xpath expr="//div[hasclass('col-md-8')]" position="attributes">
+	<attribute name="class">oe_cart</attribute>
+	</xpath>
+		<xpath expr="//h2" position="attributes">
+	<attribute name="class">mb8 mt8 octra_name</attribute>
+	</xpath>
+	</template>
+	<template id="octra_cart_lines" inherit_id="website_sale.cart_lines">
+		
+		<xpath expr="//span[@t-field='line.product_id.image_small']" position="replace">
+		<span t-field="line.product_id.image" t-options="{'widget': 'image', 'resize': None if product_image_big else '130x130','class': 'img-rounded'}" />
+		</xpath>
+		
+	<xpath expr="//th[hasclass('td-img')]" position="attributes">
+	<attribute name="class">td-img octra_td-img</attribute>
+	</xpath>
+		<xpath expr="//td[@t-if='line.product_id.product_tmpl_id']" position="attributes">
+	<attribute name="class">td-img octra_td-img</attribute>
+	</xpath>
+			<xpath expr="//td[hasclass('td-product_name')]" position="attributes">
+	<attribute name="class">td-product_name octra_td-content</attribute>
+	</xpath>
+	<xpath expr="//td[hasclass('td-qty')]" position="attributes">
+	<attribute name="class">td-qty octra_td-qty</attribute>
+	<attribute name="align">center</attribute>
+	</xpath>
+		<xpath expr="//td[hasclass('td-price')]" position="attributes">
+	<attribute name="class">td-price octra_td-price</attribute>
+	<attribute name="align">center</attribute>
+	</xpath>
+	</template>
+	<template id="octra_suggested_products_list" inherit_id="website_sale.suggested_products_list" name="Octra Suggested Products">
+	<xpath expr="//h5" position="attributes">
+	<attribute name="class">octra_name</attribute>
+	</xpath>
+			<xpath expr="//td[hasclass('td-price')]" position="attributes">
+	<attribute name="align">center</attribute>
+	</xpath>
+
+	<xpath expr="//td[hasclass('col-xs-4')]" position="attributes">
+	<attribute name="class">col-md-2 col-sm-3 col-xs-4 text-center octra_td-btn</attribute>
+	</xpath>
+	
+	<!-- Change_the_add_to_cart_title_in_cart_page_suggested_item -->
+	<xpath expr="//td[hasclass('col-xs-4')]//a//strong" position="replace">
+		<strong>Add <span class="hidden-xs">to Cart</span></strong>
+	</xpath>
+
+	</template>
+</odoo>

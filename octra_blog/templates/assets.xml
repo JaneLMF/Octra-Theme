@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="octra_blog_assets_frontend" inherit_id="web.assets_frontend">
+		<xpath expr="." position="inside">
+			<link href="/octra_blog/static/src/less/blog.less" type="text/less"
+				rel="stylesheet" />
+				<!-- <link href="/octra_blog/static/src/less/responsive_blog.less" type="text/less"
+				rel="stylesheet" />
+				<script type="text/javascript"
+				src="/octra_blog/static/src/js/masonry.pkgd.min.js"></script>
+				<script type="text/javascript"
+				src="/octra_blog/static/src/js/blog.js"></script> -->
+		</xpath>
+	</template>
+</odoo>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!-- compare table design-->
+	<template id="octra_product_attributes_body" inherit_id="website_sale_comparison.product_attributes_body" name="">
+	<xpath expr="//section[hasclass('container')]" position="attributes">
+	<attribute name="class">container mt64</attribute>
+	</xpath>
+		<xpath expr="//h3[hasclass('text-center')]" position="attributes">
+	<attribute name="class">mb32 octra_name</attribute>
+	</xpath>
+			<xpath expr="//div[hasclass('col-md-8')]" position="attributes">
+	<attribute name="class">col-md-7 octra_table</attribute>
+	</xpath>
+	
+	</template>
+	
+	
+	<template id="octra_compare_product_compare" inherit_id="website_sale_comparison.product_compare">
+		<xpath expr="//h3" position="attributes">
+			<attribute name="class">octra_name</attribute>
+		</xpath>
+		<xpath expr="//section[hasclass('container')]" position="attributes">
+			<attribute name="class">container compare_container</attribute>
+		</xpath>
+		<xpath expr="//a[hasclass('o_product_comparison_table')]/span" position="attributes">
+			<attribute name="class">compare_table_name</attribute>
+		</xpath>
+		<xpath expr="//div[hasclass('product_summary')]/span/strong" position="replace">
+		
+		</xpath>
+		<xpath expr="//div[hasclass('product_summary')]/form" position="attributes">
+			<attribute name="class">text-center compare_table_add_to_cart</attribute>
+		</xpath>
+		<xpath expr="//table[@id='o_comparelist_table']/thead/td/a/img" position="replace">
+			<img t-attf-src="/web/image/product.product/#{product.id}/image/300x300" class="img img-responsive" style="margin:auto;"/>
+		</xpath>
+		<xpath expr="//table[@id='o_comparelist_table']" position="attributes">
+			<attribute name="class">table table-bordered table-hover text-center mt16 table-comparator compare_page_table</attribute>
+		</xpath>
+	</template>
+	
+	<template id="compare_product_product_product" inherit_id="website_sale_comparison.product_product">
+		<xpath expr="//div[hasclass('col-sm-1')]" position="attributes">
+			<attribute name="class">col-sm-1 col-xs-1</attribute>
+		</xpath>
+	</template>
+		
+</odoo>

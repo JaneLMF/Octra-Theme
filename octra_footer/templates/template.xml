@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="octra_footer_footer_default" inherit_id="website.footer_default">
+		<xpath expr="//div[@id='footer']" position="replace">
+			
+			<div class="ftr_main">
+				<div id="footer" class="container hidden-print">
+					<div class="row">
+						<div class="theme_icon_and_social_container">
+							<div class="octra_logo_footer">
+								<div class="logo_container" t-if="res_company.logo">
+									<span t-field="res_company.logo" itemprop="image"
+										t-options="{'widget': 'image' , 'class':'s_image_common'}">Company name
+									</span>
+								</div>
+								<div class="logo_name_container" t-else="">
+									<span t-field="res_company.name" itemprop="name">Company name
+									</span>
+								</div>
+							</div>
+							<div class="search_bar_footer">
+								<div class="lbl_div_container">
+									<p class="newsltr_lbl">sign up for our newsletter!</p>
+								</div>
+							</div>
+						</div>
+						<div class="common_footer_content_details_div">
+							<div class="company_details_footer">
+								<div class="call-icon-div">
+									<img class="s_image_common"
+										src="/octra_footer/static/src/img/Music-Headset-icon.png"></img>
+								</div>
+								<ul class="customer-contact-ul">
+									<li>
+										<div class="contact-heading">Got Questions ? Call us 24/7!</div>
+									</li>
+									<li>
+										<div class="contact_detail_para" t-if="res_company.phone">
+											<!-- <p class="span_lbl">Tel</p> : -->
+											<p class="field_padding f_contact_phone" t-field="res_company.phone" />
+										</div>
+									</li>
+									<li>
+										<div class="contact_detail_para" t-if="res_company.street">
+											<!-- <p class="span_lbl">Add</p> : -->
+											<p class="field_padding f_add" t-field="res_company.street" />
+										</div>
+									</li>
+									<li>
+										<div class="contact_detail_para" t-if="res_company.email">
+											<!-- <p class="span_lbl">Email</p> : -->
+											<p class="field_padding f_email" t-field="res_company.email" />
+										</div>
+									</li>
+								</ul>
+								<div class="social_icons_footer">
+									<div class="footer-social-icon">
+										<a class="o_facebook" t-att-href="website.social_facebook"
+											t-if="website.social_facebook">
+											<i class="fa fa-facebook" />
+										</a>
+										<a class="o_twitter" t-att-href="website.social_twitter"
+											t-if="website.social_twitter">
+											<i class="fa fa-twitter" />
+										</a>
+										<a class="o_linkedin" t-att-href="website.social_linkedin"
+											t-if="website.social_linkedin">
+											<i class="fa fa-linkedin" />
+										</a>
+										<a class="o_youtube" t-att-href="website.social_youtube"
+											t-if="website.social_youtube">
+											<i class="fa fa-youtube-play" />
+										</a>
+										<a class="o_googleplus" t-att-href="website.social_googleplus"
+											t-if="website.social_googleplus" rel="publisher">
+											<i class="fa fa-google-plus-square" />
+										</a>
+										<a class="o_github" t-att-href="website.social_github" t-if="website.social_github">
+											<i class="fa fa-github" />
+										</a>
+									</div>
+								</div>
+								<div class="footer_lang">
+									<t t-call="website.language_selector" />
+									</div>
+								<section>
+									<ul class="list-unstyled" id="products">
+									</ul>
+								</section>
+							</div>
+							<div class="footer_menu">
+							<div class="footer-heading">
+								<ul class="customer-service-ul">
+									<li>
+										<a href="#">help</a>
+									</li>
+									<li>
+										<a href="#">gift cards</a>
+									</li>
+									<li>
+										<a href="#">order status</a>
+									</li>
+									<li>
+										<a href="#">free shipping</a>
+									</li>
+									<li>
+										<a href="#">returns &amp; exchanges</a>
+									</li>
+									<li>
+										<a href="#">international</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer_menu">
+							<div class="footer-heading">
+								<ul class="help-ul">
+									<li>
+										<a href="#">about us</a>
+									</li>
+									<li>
+										<a href="#">jobs</a>
+									</li>
+									<li>
+										<a href="#">Affiliates</a>
+									</li>
+									<li>
+										<a href="#">meet the maker</a>
+									</li>
+									<li>
+										<a href="#">contact</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer_menu">
+							<div class="footer-heading">
+								<ul class="security-ul">
+									<li>
+										<a href="#">security</a>
+									</li>
+									<li>
+										<a href="#">privacy</a>
+									</li>
+									<li>
+										<a href="#">text messaging</a>
+									</li>
+									<li>
+										<a href="#">legal</a>
+									</li>
+									<li>
+										<a href="#">supply chain</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+<!--
+							<div class="col-md-4  col-lg-2" id="info">
+								
+								
+								<ul class="list-unstyled" style="display:none">
+								</ul>
+							</div>
+-->
+						</div>
+					</div>
+				</div>
+				<div class="scrollup-div">
+					<a href="#" class="scrollup-a">
+						<i class="fa fa-angle-up scrollup-i"></i>
+					</a>
+				</div>
+			</div>
+		</xpath>
+	</template>
+
+	<template id="octra_footer_footer_copyright"
+		inherit_id="website.layout_footer_copyright" name="Footer Copyright">
+		<xpath expr="//div[@class='container mt16 mb8']" position="replace">
+		</xpath>
+		<xpath expr="//footer" position="after">
+			<div class="container mt16 mb8 end_ftr_bg">
+				<div class="block">
+					<div class="pull-center copyright_text" itemscope="itemscope"
+						itemtype="http://schema.org/Organization">
+						Copyright
+						<a href="" target="_blank">&amp;copy;
+						</a>
+						<span t-field="res_company.name" itemprop="name">Company name</span>
+						.
+						<span>All rights reserved.</span>
+					</div>
+					 <div class="pull-center"> <div class="end_ftr_right_text">Made 
+						with <i class="fa fa-heart"></i> by Emipro.</div> </div>
+				</div>
+			</div>
+		</xpath>
+	</template>
+</odoo>

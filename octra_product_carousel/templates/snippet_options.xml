@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	<!--E-Commerce Product Carousel Snippet's Options -->
+	<template id="product_carousel_snippets_option" inherit_id="website.snippet_options">
+		<xpath expr="//div[@data-js='background']" position="after">
+			<div data-js='js_get_objects' data-selector=".js_get_objects" />
+			<div data-js='js_get_selectFilter' data-selector=".js_get_objects">
+				<li class="dropdown-submenu">
+					<a class="snippets_option_font_style" tabindex="-1" href="#">Select
+						Filter
+					</a>
+					<ul class="snippets_option_font_style dropdown-menu">
+					</ul>
+				</li>
+			</div>
+		</xpath>
+	</template>
+</odoo>
